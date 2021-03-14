@@ -1,0 +1,41 @@
+body{
+    background-color: #123;
+
+}
+.prelouder {
+    border: 1px dotted red;
+    width: 200px;
+    height: 200px;
+}
+.prelouder .lg {
+    width: 200px;
+    height: 200px; 
+    border: 5px solid #555;
+    border-top-color: transparent;
+    border-radius: 100px;
+    box-sizing: border-box;
+    animation: rot 3s  infinite linear;
+    /* h.w 1 cu 5 pixeli pentru ca bordura elementului parinte
+    inpinge in afara bordura elementului copil*/
+
+}
+.prelouder .sm { border: 5px solid #999;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    border-right-color: transparent;
+    transform: translateY(15px) translateX(15px);
+    
+
+
+
+}
+@keyframes rot {
+    from { transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
